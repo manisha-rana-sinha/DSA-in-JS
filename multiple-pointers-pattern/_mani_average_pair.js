@@ -4,5 +4,26 @@
  * @returns {Array}
  */
 function averagePair(arr, targetAvg) {
-	return;
+	// 1. start two pointers, one from start (i) and one from the end (j) of the array since the array is sorted
+	// 2. Loop through it
+	// 3. check if i+J/2 === targetAvg, if true, return true
+	// 4. else check if i+j/2 < targetAVG, if true, i++ else j--
+
+	let i = 0,
+		j = arr.length - 1;
+	while (i < j) {
+		let avg = (arr[i] + arr[j]) / 2;
+		if (avg === targetAvg) {
+			console.log('first pair which gives target average', [arr[i], arr[j]]);
+			return true;
+		} else if (avg < targetAvg) {
+			i++;
+		} else {
+			j--;
+		}
+	}
+	return false;
 }
+console.log(averagePair([-4, -3, -2, 1, 3, 4, 5, 6, 8], 3));
+console.log(averagePair([1, 3, 4, 5, 6, 8], 3));
+console.log(averagePair([-4, -3, -2, 1, 3, 4, 5, 6, 8], 8));
