@@ -19,11 +19,15 @@ function areThereDuplicates(...args) {
 	//return new Set(arguments).size !== arguments.length;
 }
 
-console.log(areThereDuplicates(23, 45, 33, 344, 44, 55)); //false
-console.log(areThereDuplicates(23, 23, 45, 67)); //true
-console.log(areThereDuplicates(23, 45, 33, 344, 44, 55)); //false
-console.log(areThereDuplicates('apple', 'banana', 'cat')); //false
-console.log(areThereDuplicates('apple', 'banana', 'cat', 'apple')); //true
+// console.log(areThereDuplicates(23, 45, 33, 344, 44, 55)); //false
+// console.log(areThereDuplicates(23, 23, 45, 67)); //true
+// console.log(areThereDuplicates(23, 45, 33, 344, 44, 55)); //false
+// console.log(areThereDuplicates('apple', 'banana', 'cat')); //false
+// console.log(areThereDuplicates('apple', 'banana', 'cat', 'apple')); //true
+
+console.log(areThereDuplicates(1, 2, 3)); // false
+console.log(areThereDuplicates(1, 2, 2)); // true
+console.log(areThereDuplicates('a', 'b', 'c', 'a')); // true
 
 /**
  * Notes----
