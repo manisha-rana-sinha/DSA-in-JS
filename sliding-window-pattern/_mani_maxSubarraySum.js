@@ -5,7 +5,6 @@
  * @returns {Number}
  */
 function maxSubarraySum(arr, n) {
-	debugger;
 	if (arr.length === 0) {
 		console.log('No integers found in the array');
 		return null;
