@@ -104,7 +104,7 @@ let user1 = new User ('Manisha', 'Sinha', 1992);
 let user2 = new User ('Dibyanshu', 'Sinha', 1992);
 ```
 
-![returning false](<WhatsApp Image 2024-04-07 at 13.22.28_46bfa871.jpg>)
+![returning false](<./images/WhatsApp Image 2024-04-07 at 13.22.28_46bfa871.jpg>)
 
 When we use the term "new" in front of a function call, javascript does two things for us automatically:
 
@@ -133,7 +133,7 @@ let user2 = new User ('Dibyanshu', 'Sinha', 1992);
 console.log(user1, user2);
 ```
 
-![Prototypal Inheritance](protypalInheritance.png)
+![Prototypal Inheritance](./images/protypalInheritance.png)
 
 [Link - prototypal Inheritance with function constructor](https://www.youtube.com/watch?v=gRILddYACkg&list=PL1BztTYDF-QOvKYBBYdjzHISCeaYCAEfH&index=9)
 
