@@ -1,0 +1,126 @@
+Nested Arrays Practice
+Flatten a Nested Array
+Write a function to flatten a deeply nested array into a single-level array.
+Example:
+Input: [1, [2, [3, [4]], 5]]
+Output: [1, 2, 3, 4, 5]
+
+Find Maximum Depth of a Nested Array
+Write a function to calculate the depth of a nested array.
+Example:
+Input: [1, [2, [3, [4]], 5]]
+Output: 4
+
+Sum All Numbers in Nested Arrays
+Write a function to sum all numbers in a nested array.
+Example:
+Input: [1, [2, [3, 4], 5]]
+Output: 15
+
+Extract Even Numbers from a Nested Array
+Write a function to extract all even numbers from a nested array.
+Example:
+Input: [1, [2, [3, [4]], 5]]
+Output: [2, 4]
+
+Transpose a 2D Matrix
+Write a function to transpose a 2D matrix.
+Example:
+Input: [[1, 2], [3, 4], [5, 6]]
+Output: [[1, 3, 5], [2, 4, 6]]
+
+Nested Objects Practice
+Access Nested Object Properties
+Write a function to retrieve the value of a property in a nested object using a path.
+Example:
+Input: getNestedValue({ a: { b: { c: 10 } } }, "a.b.c")
+Output: 10
+
+Deep Merge Two Objects
+Write a function to deeply merge two nested objects.
+Example:
+Input:
+
+javascript
+Copy code
+obj1 = { a: { b: 1 } };
+obj2 = { a: { c: 2 } };
+Output: { a: { b: 1, c: 2 } }
+
+Convert a Nested Object to Flat Object
+Write a function to convert a nested object into a flat object with keys as paths.
+Example:
+Input:
+
+javascript
+Copy code
+{ a: { b: { c: 1 } } }
+Output:
+
+javascript
+Copy code
+{ "a.b.c": 1 }
+Count Keys in a Nested Object
+Write a function to count the total number of keys in a nested object.
+Example:
+Input:
+
+javascript
+Copy code
+{ a: 1, b: { c: 2, d: { e: 3 } } }
+Output: 5
+
+Find All Keys with a Specific Value
+Write a function to find all keys in a nested object that have a specific value.
+Example:
+Input:
+
+javascript
+Copy code
+{ a: 1, b: { c: 1, d: { e: 3 } } }, value = 1
+Output: ["a", "b.c"]
+
+Mixed Nested Arrays and Objects Practice
+Deep Clone a Complex Structure
+Write a function to create a deep clone of a structure containing nested arrays and objects.
+Example:
+Input:
+
+javascript
+Copy code
+{ a: [1, { b: 2 }], c: 3 }
+Output:
+
+javascript
+Copy code
+{ a: [1, { b: 2 }], c: 3 } // New object, not a reference
+Find a Value in Nested Arrays/Objects
+Write a function to search for a value in a mixed nested structure and return its path.
+Example:
+Input:
+
+javascript
+Copy code
+{ a: [1, { b: 2, c: [3, 4] }], d: 5 }, value = 4
+Output: "a[1].c[1]"
+
+Group Data by a Nested Property
+Write a function to group an array of objects by a nested property.
+Example:
+Input:
+
+javascript
+Copy code
+[
+  { id: 1, details: { category: "A" } },
+  { id: 2, details: { category: "B" } },
+  { id: 3, details: { category: "A" } }
+]
+Output:
+
+javascript
+Copy code
+{
+  A: [{ id: 1, details: { category: "A" } }, { id: 3, details: { category: "A" } }],
+  B: [{ id: 2, details: { category: "B" } }]
+}
